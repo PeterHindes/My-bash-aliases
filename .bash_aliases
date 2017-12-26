@@ -23,6 +23,7 @@ alias pamac='pamac-manager &'
 alias install='pacman -S'
 alias remove='pacman -Rn'
 alias aurinstall='pacaur -dmy'
+alias key='gpg --recv-keys --keyserver hkp://pgp.mit.edu'
 
 alias jukebox='mpsyt'
 alias yplayer='youtube-viewer'
