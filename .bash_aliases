@@ -30,7 +30,7 @@ alias yplayer='youtube-viewer'
 
 alias ytdl='youtube-dl'
 alias ytmp3='ytdl --extract-audio --audio-format mp3 -o "1 - %(title)s.%(ext)s"'
-alias ytpl='ytdl --yes-playlist -o "%(title)s.%(ext)s"'
+alias ytpl='ytdl --yes-playlist -o "%(playlist_index)s - %(title)s.%(ext)s"'
 alias ytmpl='ytdl --extract-audio --audio-format mp3 --yes-playlist -o "%(playlist_index)s - %(title)s.%(ext)s"'
 
 aget() {
