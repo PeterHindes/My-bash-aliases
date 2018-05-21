@@ -38,7 +38,7 @@ alias yplayer='youtube-viewer'
 alias music='cmus'
 
 # Youtube Aliases
-alias ytdl='youtube-dl -i'
+alias ytdl='youtube-dl -i --no-playlist'
 alias ytmp3='ytdl --extract-audio --audio-format mp3 -o "1 - %(title)s.%(ext)s"'
 alias ytpl='ytdl --yes-playlist -o "%(playlist_index)s - %(title)s.%(ext)s"'
 alias ytmpl='ytdl --extract-audio --audio-format mp3 --yes-playlist -o "%(playlist_index)s - %(title)s.%(ext)s"'
