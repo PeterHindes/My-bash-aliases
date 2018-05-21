@@ -13,12 +13,13 @@ alias ls='ls --color=auto'
 alias l='ls -l'
 alias la='ls -la'
 alias disks='fdisk -l'
+alias ifconfig='sudo ip addr'
 
 # Auto Elevate For Common Programs
 alias apt-get='sudo apt'
 alias pacman='sudo pacman'
 alias fdisk='sudo fdisk'
-alias ifconfig='sudo ifconfig'
+#alias ifconfig='sudo ifconfig'
 
 alias no='yes n'
 
