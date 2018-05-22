@@ -1,5 +1,5 @@
 # Edit These or read these out
-alias aliase='sudo nano ~/.bash_aliases'
+alias aliase='nano ~/.bash_aliases'
 alias aliases='cat ~/.bash_aliases'
 
 # Simple history (no line numbers)
@@ -9,11 +9,18 @@ alias hist='cat ~/.bash_history'
 alias dfree='df -h | head -1 ; df -h | grep "/$"'
 
 # Shorten and mistyped comands
+# CLI
 alias ls='ls --color=auto'
-alias l='ls -l'
+alias l='ls'
+alias ll='ls -l'
 alias la='ls -la'
 alias disks='fdisk -l'
 alias ifconfig='sudo ip addr'
+alias no='yes n'
+# GUI
+alias pamac='pamac-manager &'
+# GDM
+alias gdm='systemctl start gdm'
 
 # Auto Elevate For Common Programs
 alias apt-get='sudo apt'
@@ -21,16 +28,15 @@ alias pacman='sudo pacman'
 alias fdisk='sudo fdisk'
 #alias ifconfig='sudo ifconfig'
 
-alias no='yes n'
-
-alias updateall='pacman -Syu && pacaur -ku' # && pacman -Sc && pacaur -Sc'
-alias updateally='yes | pacman -Syu && yes| pacaur -ku --noedit'
-alias paclean='yes | pacman -Sc && yes | pacaur -Sc'
-
-alias pamac='pamac-manager &'
+# Package Managment Simplified
+alias updateall='yay -Syu'
+alias updateally='yes | yay -Syu'
+alias paclean='yes | yay -Sc'
 alias install='yay -S'
 alias remove='yay -Rndd'
 alias key='gpg --recv-keys --keyserver hkp://pgp.mit.edu'
+# Needs testing
+#alias iyay='yes | sudo pacman -S git && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg && yes | sudo pacman -U *.pkg.tar.gz'
 
 #Terminal Players
 alias jukebox='mpsyt'
