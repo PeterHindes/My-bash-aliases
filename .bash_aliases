@@ -21,6 +21,7 @@ alias no='yes n'
 alias pamac='pamac-manager &'
 # GDM
 alias gdm='systemctl start gdm'
+alias mdg='systemctl stop gdm'
 
 # Auto Elevate For Common Programs
 alias apt-get='sudo apt'
